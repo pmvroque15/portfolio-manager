@@ -24,11 +24,15 @@ public class CreditCard implements Valuable {
     }
 
     public double charge(double amount) {
-        return this.balance += amount;
+         this.balance += amount;
+
+         return this.balance;
     }
 
     public double pay(double amount) {
-        return this.balance -= amount;
+         this.balance -= amount;
+
+         return this.balance;
     }
 
     @Override

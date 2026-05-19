@@ -24,11 +24,15 @@ public class BankAccount implements Valuable{
     }
 
     public double deposit(double amount) {
-        return this.balance += amount;
+        this.balance += amount;
+
+        return this.balance;
     }
 
     public double withdraw(double amount) {
-        return this.balance -= amount;
+         this.balance -= amount;
+
+         return this.balance;
     }
 
     @Override
