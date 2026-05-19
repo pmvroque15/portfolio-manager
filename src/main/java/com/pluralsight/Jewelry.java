@@ -24,7 +24,7 @@ public class Jewelry extends FixedAsset{
         } else if (this.karat == 10) {
             purity = 4.17;
         }
-        return weightPerGrams * purity * goldPricePerGram;
+        return this.weightPerGrams * purity * goldPricePerGram;
     }
 }
 
